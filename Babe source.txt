@@ -1,0 +1,386 @@
+-- Booting the Library
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/main/source.lua", true))()
+
+-- Creating the Window
+local Window = Luna:CreateWindow({
+    Name = "PlayzHub", -- The title of your window
+    Subtitle = nil, -- Optional subtitle
+    LogoID = "82795327169782", -- Optional logo ID
+    LoadingEnabled = true, -- Enable loading screen
+    LoadingTitle = "PlayzHub", -- Loading screen title
+    LoadingSubtitle = "by Clarie and playz", -- Loading screen subtitle
+    ConfigSettings = {
+        RootFolder = nil, -- Root folder path
+        ConfigFolder = "PlayzHub", -- Config folder name
+    },
+    KeySystem = false, -- Key system setting
+    KeySettings = {
+        Title = "PlayzHub Key", -- Key system title
+        Subtitle = "Key System", -- Key system subtitle
+        Note = "Please use a secure HWID key system.",
+        SaveInRoot = false, -- Don't save key in root folder
+        SaveKey = true, -- Save the key
+        Key = {"Example Key"}, -- Example accepted key
+        SecondAction = {
+            Enabled = false, -- Disable second action
+            Type = "Link", -- Set to "Link" or "Discord"
+            Parameter = "" -- Optional URL
+        }
+    }
+})
+
+-- Creating the Main Tab
+local Tab = Window:CreateTab({
+    Name = "Main Tab",
+    Icon = "view_in_ar",
+    ImageSource = "Material",
+    ShowTitle = true
+})
+
+-- Creating the Button for "Be NPC or Die"
+local BeNPCButton = Tab:CreateButton({
+    Name = "Be NPC or Die",
+    Description = "Click to execute the Be NPC or Die script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Be NPC or Die script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaguya11/KaguHubRework/refs/heads/main/Scripts/Loader.lua", true))("t.me/kaguyaxscript")
+    end
+})
+
+-- Creating the Button for "Blue Lock Rivals"
+local BlueLockButton = Tab:CreateButton({
+    Name = "Blue Lock Rivals",
+    Description = "Click to execute the Blue Lock Rivals script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Blue Lock Rivals script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ov5or/TerminScript/refs/heads/main/Script.lua"))()
+    end
+})
+
+-- Creating the Button for "Mad City Chapter 1"
+local MadCityButton = Tab:CreateButton({
+    Name = "Mad City Chapter 1",
+    Description = "Click to execute the Mad City Chapter 1 script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Mad City Chapter 1 script...")
+
+        -- Setting fps boost option
+        getgenv().fps = false  -- Boosts FPS (false = Disabled)
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/devforroblox/rubyhubv2util/refs/heads/main/arv2", true))()
+    end
+})
+
+-- Creating the Button for "Troll Slapping Tower"
+local TrollSlappingButton = Tab:CreateButton({
+    Name = "Troll Slapping Tower",
+    Description = "Click to execute the Troll Slapping Tower script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Troll Slapping Tower script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dhiosetia/pastebin/refs/heads/main/README.md"))()
+    end
+})
+
+-- Creating the Button for "Prison Life"
+local PrisonLifeButton = Tab:CreateButton({
+    Name = "Prison Life",
+    Description = "Click to execute the Prison Life script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Prison Life script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DataApples/libraries/refs/heads/main/File"))()
+    end
+})
+-- Creating the Button for "Blade ball klaitor"
+local BladeballklaitorButton = Tab:CreateButton({
+    Name = "Blade ball klaitor",
+    Description = "Click to execute the Blade ball klaitor script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Blade ball klaitor...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a70e413180d7ede96d4a09705648f630.lua"))()
+    end
+})
+-- Creating the Button for "Blade ball Arceney"
+local BladeballArceneyButton = Tab:CreateButton({
+    Name = "Blade ball Arceney",
+    Description = "Click to execute the Blade ball Arceney script.",
+    Callback = function()
+        -- Warning before execution
+        print("Blade ball Arceney script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/4lpaca-pin/Arceney/refs/heads/main/main.luau"))()
+    end
+})
+-- Creating the Button for "Basketball legends"
+local BasketballlegendsButton = Tab:CreateButton({
+    Name = "Basketball legends",
+    Description = "Click to execute the Basketball legends script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Basketball legends script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/blossom20500/SigmaZHub/refs/heads/main/free.txt"))()
+    end
+})
+-- Creating the Button for "Strongest battle grounds"
+local StrongestbattlegroundsButton = Tab:CreateButton({
+    Name = "Strongest battle grounds",
+    Description = "Click to execute the Strongest battle grounds script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Strongest battle grounds script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+    end
+    })
+-- Creating the Button for "Realistic Street Soccer"
+local RealisticStreetSoccerButton = Tab:CreateButton({
+    Name = "Realistic Street Soccer",
+    Description = "Click to execute the Basketball legends script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Realistic Street Soccer...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VerbalHubz/Verbal-Hub/refs/heads/main/Realistic%20Street%20Soccer%20Op%20Script",true))()
+    end
+})
+-- Creating the Button for "Color Game!"
+local ColorGameButton = Tab:CreateButton({
+    Name = "Color Game!",
+    Description = "Click to execute the Color Game script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Color Game! script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Davidfhdgfyyfytyttry/DAVITROLLZ-BRASIL/refs/heads/main/Color"))()
+    end
+})
+
+-- Creating the Button for "Ninja Legend"
+local NinjaLegendButton = Tab:CreateButton({
+    Name = "Ninja Legend",
+    Description = "Click to execute the Ninja Legend script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Ninja Legend script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua"))()
+    end
+})
+
+-- Creating the Button for "Legend of Speed"
+local LegendOfSpeedButton = Tab:CreateButton({
+    Name = "Legend of Speed",
+    Description = "Click to execute the Legend of Speed script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Legend of Speed script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidOverIord/Code/refs/heads/main/Auto%20steps%20and%20gems%20and%20rebirth%20legends%20of%20speed"))()
+    end
+})
+
+-- Creating the Button for "Highway Racer Reborn"
+local HighwayRacerButton = Tab:CreateButton({
+    Name = "Highway Racer Reborn",
+    Description = "Click to execute the Highway Racer Reborn script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Highway Racer Reborn script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JustVibey/Scripts/refs/heads/main/VibeHub.lua"))()
+    end
+})
+-- Creating the Button for "Mines"
+local MinesButton = Tab:CreateButton({
+    Name = "Mines",
+    Description = "Click to execute the Mines script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing  Mines script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NitezTJS/ZJHub/refs/heads/main/zjhub.lua"))()
+    end
+})
+
+-- Creating the Button for "Saber Legend"
+local SaberLegendButton = Tab:CreateButton({
+    Name = "Saber Legend",
+    Description = "Click to execute the Saber Legend script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Saber Legend script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet('https://pastefy.app/Ht0WFhoC/raw'))()
+    end
+})
+
+-- Creating the Button for "Infinite Yield"
+local InfiniteYieldButton = Tab:CreateButton({
+    Name = "Infinite Yield",
+    Description = "Click to execute the Infinite Yield script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Infinite Yield script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end
+})
+
+-- Creating the Button for "Grow A Fish Pond"
+local GrowAFishPondButton = Tab:CreateButton({
+    Name = "Grow A Fish Pond",
+    Description = "Click to execute the Grow A Fish Pond script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Grow A Fish Pond script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://github.com/alyssagithub/Scripts/raw/main/FrostByte/Initiate.lua"))()
+    end
+})
+
+-- Creating the Button for "Answer Or Die"
+local AnswerOrDieButton = Tab:CreateButton({
+    Name = "Answer Or Die",
+    Description = "Click to execute the Answer Or Die script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Answer Or Die script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Answer-or-Die-New-12400"))()
+    end
+})
+-- Creating the Button for "Grow a Garden"
+local GrowaGardenButton = Tab:CreateButton({
+    Name = "Grow a Garden",
+    Description = "Click to execute the Grow a Garden script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Grow a Garden script...")
+
+        -- Executing the script provided
+        repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+
+local scripts = {
+    [126884695634066] = "https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/Garden/Garden-V1.lua",
+    [81440632616906] = "https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/DigEarth/V1.lua",
+}
+
+local url = scripts[game.PlaceId]
+if url then
+    loadstring(game:HttpGetAsync(url))()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NoLag-id/No-Lag-HUB/refs/heads/main/untitled.lua"))()
+end
+    end
+})
+-- Creating the Button for "Jailbreak"
+local JailbreakButton = Tab:CreateButton({
+    Name = "Jailbreak",
+    Description = "Click to execute the Jailbreak script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Jailbreak script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.luau"))()
+    end
+})
+
+-- Creating the Button for "Spelling Bee"
+local SpellingBeeButton = Tab:CreateButton({
+    Name = "Spelling Bee",
+    Description = "Click to execute the Spelling Bee script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Spelling Bee script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PreppyHub/PreppyHub/refs/heads/main/PreppyHub"))()
+    end
+})
+
+-- Creating the Button for "Pop it Trade Scam"
+local PopItTradeScamButton = Tab:CreateButton({
+    Name = "Pop it Trade Scam",
+    Description = "Click to execute the Pop it Trade Scam script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing Pop it Trade Scam script...")
+
+        -- Executing the script provided
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Cooked-METHods/pop-it-trading-scam-script/refs/heads/main/.gitignore"))()
+    end
+})
+-- Creating the button for "Funky Friday"
+local Funky FridayButton = Tab:CreateButton({
+Name = "Funky Friday",
+Description = " Click to execute the Funky Friday script.",
+Callback = function()
+-- Warning before execution 
+print("Executing Funky Friday script...")
+-- Executing the script provided 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Fire-Hub/main/Loader"))()
+end
+})
+-- Creating the Blade Ball Tab
+local BladeBallTab = Window:CreateTab({
+    Name = "Blade Ball ScriptÃ¢Å¡Â½Ã¯Â¸Â",
+    Icon = "view_in_ar",
+    ImageSource = "Material",
+    ShowTitle = trueloadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Fire-Hub/main/Loader"))()
+})
+
+-- Creating a Button for "Blade Ball"
+local BladeBallButton = BladeBallTab:CreateButton({
+    Name = "OverDriveHub - Blade Ball",
+    Description = "Click to execute the OverDriveHub Blade Ball script.",
+    Callback = function()
+        -- Warning before execution
+        print("Executing OverDriveHub Blade Ball script...")
+
+        -- Executing the OverDriveHub script for Blade Ball
+        loadstring(game:HttpGet("https://api.overdrivehub.xyz/v1/auth"))()
+    end
+})
+
+-- Optional: You can create a Home Tab (or any other tabs) if you want
+Window:CreateHomeTab({
+    SupportedExecutors = {"Executor 1", "Executor 2"}, -- List your supported executors
+    DiscordInvite = "YourDiscordInviteCode", -- Your Discord invite code (no `discord.gg/`)
+    Icon = 1 -- Icon for the home tab
+})
+
+-- Destroying an Element Example
+-- Button:Destroy() -- If you want to destroy the button later in the script
+
+-- To destroy the entire UI (Window)
+-- Luna:Destroy() -- Call this if you want to destroy the UI at any point
